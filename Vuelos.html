@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vuelos - VeTravel</title> <!-- Título de la página -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/b18a115cef.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        background-color: #f2f2f2; /* Color de fondo */
+      }
+    </style>
+  </head>
+  <body>
+    
+    <header>
+      <a href="VeTravel.html"><img src="logo.png" width="200px" height="100px"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+          <li><a href="destinos.html"><i class="fa-solid fa-map-marked-alt"></i> Destinos</a></li>
+          <li><a href="paquetes.html"><i class="fa-solid fa-box"></i> Paquetes</a></li>
+          <li><a href="login.html"><i class="fa-solid fa-user"></i> </a></li>
+          <li><a href="carrito.html"><i class="fa-solid fa-shopping-cart"></i> </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2 style="text-align: center;">Vuelos</h2> <!-- Título "Vuelos" arriba del formulario -->
+
+    <!-- Formulario de búsqueda de vuelos -->
+    <form method="get" action="https://www.pricetravel.com/vuelos">
+        <!-- Campo de entrada para Origen -->
+        <input type="text" name="origen" placeholder="Origen" required>
+
+        <!-- Campo de entrada para Destino -->
+        <input type="text" name="destino" placeholder="Destino" required>
+
+        <!-- Campo de entrada para la fecha -->
+        <input type="date" name="fecha" required>
+
+        <!-- Campo de entrada para el número de pasajeros -->
+        <input type="number" name="pasajeros" placeholder="Número de pasajeros" required>
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit" class="boton-buscar">Buscar</button>
+    </form>
+
+    <footer>
+      <div class="container-footer">
+        <div class="row">
+          <div class="col1">
+            <div class="col">
+              <h4>Contacto</h4>
+              <p>Teléfono: +52 4446719023</p>
+              <p>Email: Ve.Travel@gmail.com</p>
+              <p>Dirección: Av. Reforma #123, SLP</p>
+            </div>
+             
+            <div class="col">
+              <h4>Redes sociales</h4>
+              <ul class="redes-sociales">
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <div class="col">
+              <p>&copy; 2024 VeTravel. Todos los derechos reservados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

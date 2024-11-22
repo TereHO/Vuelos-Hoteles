@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buscar Hotel - VeTravel</title> <!-- Título de la página -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/b18a115cef.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        background-color: #f2f2f2; /* Color de fondo */
+      }
+      .container {
+        text-align: center;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <a href="VeTravel.html"><img src="logo.png" width="200px" height="100px"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="destinos.html"><i class="fa-solid fa-map-marked-alt"></i> Destinos</a></li>
+            <li><a href="paquetes.html"><i class="fa-solid fa-box"></i> Paquetes</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-user"></i> </a></li>
+            <li><a href="carrito.html"><i class="fa-solid fa-shopping-cart"></i> </a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+      <h1>Buscar Hotel</h1>
+        <form action="#" method="get">
+            <select name="ubicacion" required>
+                <option value="" disabled selected>Selecciona una ubicación</option>
+                <option value="AGS">Aguascalientes</option>
+                <option value="BC">Baja California</option>
+                <option value="BCS">Baja California Sur</option>
+                <option value="CAMP">Campeche</option>
+                <option value="CHIS">Chiapas</option>
+                <option value="CHIH">Chihuahua</option>
+                <option value="COAH">Coahuila</option>
+                <option value="COL">Colima</option>
+                <option value="DGO">Durango</option>
+                <option value="JAL">Jalisco</option>
+                <option value="MICH">Michoacán</option>
+                <option value="MOR">Morelos</option>
+                <option value="NAY">Nayarit</option>
+                <option value="NL">Nuevo León</option>
+                <option value="OAX">Oaxaca</option>
+                <option value="PUE">Puebla</option>
+                <option value="SLP">San Luis Potosí</option>
+            </select>
+            <div id="hoteles">
+                <h2>Hoteles Disponibles:</h2>
+                <div id="AGS" style="display: none;">
+                    <ul>
+                        <li>Quinta Real Aguascalientes</li>
+                        <li>Aguascalientes Marriott Hotel</li>
+                        <li>Fiesta Americana Aguascalientes</li>
+                    </ul>
+                </div>
+                <div id="BC" style="display: none;">
+                    <ul>
+                        <li>Hotel Araiza Mexicali</li>
+                        <li>Quartz Hotel & Spa</li>
+                        <li>Hotel Coral & Marina</li>
+                    </ul>
+                </div>
+                <div id="BCS" style="display: none;">
+                    <ul>
+                        <li>Waldorf Astoria Los Cabos Pedregal</li>
+                        <li>CostaBaja Resort & Spa</li>
+                        <li>One&Only Palmilla</li>
+                    </ul>
+                </div>
+                <div id="CAMP" style="display: none;">
+                    <ul>
+                        <li>Hacienda Puerta Campeche, a Luxury Collection Hotel</li>
+                        <li>Hotel Plaza Campeche</li>
+                        <li>Gamma Campeche Malecón</li>
+                    </ul>
+                </div>
+                <div id="CHIS" style="display: none;">
+                    <ul>
+                        <li>Hotel Bo</li>
+                        <li>Sombra del Agua</li>
+                        <li>Marriott Tuxtla Gutiérrez Hotel</li>
+                    </ul>
+                </div>
+                <div id="CHIH" style="display: none;">
+                    <ul>
+                        <li>Sheraton Chihuahua Soberano</li>
+                        <li>Hotel Lucerna Ciudad Juárez</li>
+                        <li>SCasa Grande Chihuahua</li>
+                    </ul>
+                </div>
+                <div id="COAH" style="display: none;">
+                    <ul>
+                        <li>Quinta Real Saltillo</li>
+                        <li>DoubleTree Suites by Hilton Hotel Saltillo</li>
+                        <li>Fiesta Inn Torreón Galerías</li>
+                    </ul>
+                </div>
+                <div id="COL" style="display: none;">
+                    <ul>
+                        <li>Fiesta Inn Colima</li>
+                        <li>Wyndham Garden Colima</li>
+                        <li>Hotel Mision Colima</li>
+                    </ul>
+                </div>
+                <div id="DGO" style="display: none;">
+                    <ul>
+                        <li>Hotel Gobernador</li>
+                        <li>Victoria Express Durango</li>
+                        <li>Holiday Inn Durango</li>
+                    </ul>
+                </div>
+                <div id="JAL" style="display: none;">
+                    <ul>
+                        <li>Hotel Riu Plaza Guadalajara</li>
+                        <li>Hotel Morales Historical & Colonial Downtown Core</li>
+                        <li>Hyatt Regency Andares Guadalajara</li>
+                    </ul>
+                </div>
+                <div id="MICH" style="display: none;">
+                    <ul>
+                        <li>Hotel Misión Pátzcuaro Centro Histórico</li>
+                        <li>Hotel de la Soledad</li>
+                        <li>Hotel Virrey de Mendoza</li>
+                    </ul>
+                </div>
+                <div id="MOR" style="display: none;">
+                    <ul>
+                        <li>Hotel de la Soledad</li>
+                        <li>Hotel Virrey de Mendoza</li>
+                        <li>Hotel Casa Grande Morelia</li>
+                    </ul>
+                </div>
+                <div id="NAY" style="display: none;">
+                    <ul>
+                        <li>W Punta de Mita</li>
+                        <li>Marival Emotions Resort & Suites All-Inclusive</li>
+                        <li>Villa La Estancia Beach Resort & Spa Riviera Nayarit</li>
+                    </ul>
+                </div>
+                <div id="NL" style="display: none;">
+                    <ul>
+                        <li>Grand Fiesta Americana Monterrey Valle</li>
+                        <li>Safi Royal Luxury Valle</li>
+                        <li>NH Collection Monterrey San Pedro</li>
+                    </ul>
+                </div>
+                <div id="OAX" style="display: none;">
+                    <ul>
+                        <li>Quinta Real Oaxaca</li>
+                        <li>Hotel Casa Oaxaca El Sueño</li>
+                        <li>Hotel Parador de Alcalá Oaxaca</li>
+                    </ul>
+                </div>
+                <div id="PUE" style="display: none;">
+                    <ul>
+                        <li>La Purificadora</li>
+                        <li>Rosewood Puebla</li>
+                        <li>Hotel Boutique Casareyna</li>
+                    </ul>
+                </div>
+                <div id="SLP" style="display: none;">
+                    <ul>
+                        <li>Hotel Museo Palacio de San Agustín</li>
+                        <li>Quinta Real Palacio de San Agustín</li>
+                        <li>NH Collection San Luis Potosí Zona Industrial</li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.querySelector('select[name="ubicacion"]').addEventListener('change', function() {
+            var ubicacion = this.value;
+            var hoteles = document.querySelectorAll('#hoteles > div');
+            hoteles.forEach(function(element) {
+                element.style.display = 'none';
+            });
+            document.getElementById(ubicacion).style.display = 'block';
+        });
+    </script>
+    <footer>
+        <div class="container-footer">
+          <div class="row">
+            <div class="col1">
+              <div class="col">
+                <h4>Contacto</h4>
+                <p>Teléfono: +52 4446719023</p>
+                <p>Email: Ve.Travel@gmail.com</p>
+                <p>Dirección: Av. Reforma #123, SLP</p>
+              </div>
+               
+              <div class="col">
+                <h4>Redes sociales</h4>
+                <ul class="redes-sociales">
+                  <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col1">
+              <div class="col">
+                <p>&copy; 2024 VeTravel. Todos los derechos reservados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>  
+</body>
+</html>
